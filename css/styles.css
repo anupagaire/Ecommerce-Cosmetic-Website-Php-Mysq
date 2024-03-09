@@ -1,0 +1,100 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.main {
+  height: 100vh;
+  width: 20000vh;
+  margin: 0;
+  padding: 0;
+}
+
+.home-bg .main{
+  height: 100vh;
+  width: 200000vh;
+
+}
+.home-bg .swiper-slide{
+  padding: 0;
+  margin: 0;
+  width: 100vh;
+}
+.slides .image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+.slides .image-data {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 100;
+  align-items: left;
+  padding-left: 2vh;
+}
+
+.image-data h2 {
+  font-size: 45px;
+  font-weight: 600;
+  color: black;
+}
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #080808;
+  background: rgb(235, 108, 68, 0.71);
+  text-decoration: none;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+  font-size: medium;
+}
+a.button:hover {
+  color: #fff;
+  background-color: #c87e4f;
+}
+
+/* swiper button css */
+.nav-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+.swiper-button-next {
+  right: 50px;
+}
+.swiper-button-prev {
+  left: 50px;
+}
+.nav-btn::before,
+.nav-btn::after {
+  font-size: 25px;
+  color: #fff;
+}
+.swiper-pagination-bullet {
+  opacity: 1;
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  visibility: visible;
+}
+.swiper-pagination-bullet-active {
+  border: 2px solid #fff;
+  background-color: #c87e4f;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-btn {
+    visibility: hidden;
+  }
+  .swiper-pagination-bullet {
+    visibility: visible;
+  }
+}
